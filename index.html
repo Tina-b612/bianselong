@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			@keyframes icolor{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			@keyframes point{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+		    body {
+		    	margin: 0;
+		    }
+			.wrap {
+				position: relative;
+				width: 600px;
+				height: 600px;
+				margin: 30px auto;
+				overflow: hidden;
+			}
+			.color {
+				position: absolute;
+				top: -600px;
+				right: -800px;
+				width: 1500px;
+				height: 1500px;
+				background: url(img/bg-palette.jpg) no-repeat;
+				transform: rotate(0deg);
+				transform-origin: center center;
+				animation: 20s icolor linear infinite forwards;
+			}
+			.point {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -435px 0 0 -435px;
+				width: 670px;
+				height: 670px;
+				border: 100px solid #fff;
+				background: url(img/diandian.png) no-repeat;
+				transform: rotate(0deg);
+				transform-origin: center center;
+				animation: 60s point linear infinite forwards;
+			}
+			.drogon {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -188px 0 0 -188px;
+				width: 376px;
+				height: 376px;
+				background: url(img/icon-chameleon.png) no-repeat;
+				transform: rotate(0deg);
+				transform-origin: center center;
+				z-index: 9;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="color"></div>
+			<div class="con">
+				<div class="point"></div>
+				<div class="drogon"></div>
+			</div>
+		</div>
+	</body>
+</html>
